@@ -15,9 +15,9 @@ module.exports = {
       },
       fontFamily: {
         // map both utilities to Geller Headline for consistency
-        sans: ['var(--font-geller-headline)', 'Inter', 'sans-serif'],
-        serif: ['var(--font-geller-headline)', 'Playfair Display', 'serif'],
-        display: ['var(--font-geller-headline)', 'Inter', 'sans-serif'],
+        sans: ['"Geller Headline"', 'Inter', 'sans-serif'],
+        serif: ['"Geller Headline"', 'Playfair Display', 'serif'],
+        display: ['"Geller Headline"', 'Inter', 'sans-serif'],
       },
       boxShadow: {
         clinic: '0 4px 20px -2px rgba(27, 43, 58, 0.05)',

@@ -43,7 +43,7 @@ export default function Navigation() {
               href={link.href}
               className={`text-sm uppercase tracking-wider ${
                 link.text === 'Book Now'
-                  ? 'bg-clinic-dark text-white px-5 py-2 hover:bg-clinic-gold transition'
+                  ? 'bg-clinic-yellow text-clinic-dark px-5 py-2 hover:bg-clinic-gold transition'
                   : 'text-clinic-gray hover:text-clinic-gold'
               }`}
             >

@@ -5,8 +5,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("/assets/fonts/geller-headline.woff2") format("woff2"),
-       url("/assets/fonts/geller-headline.woff") format("woff");
+  src: url("/assets/fonts/geller-headline.woff2") format("woff2");
 }
 
 :root {
@@ -23,12 +22,22 @@ html, body {
   .bg-clinic-off-white { background-color: #F4F1EA; }
   .bg-clinic-dark { background-color: #1A1A1A; }
   .bg-clinic-beige { background-color: #F9F7F2; }
+  .bg-clinic-yellow { background-color: #fac96e; }
 
   .text-clinic-dark { color: #1A1A1A; }
   .text-clinic-gray { color: #717171; }
   .text-clinic-gold { color: #C5A059; }
+  .text-clinic-green { color: #4CAF50; }
 
   .hover\:bg-clinic-gold:hover { background-color: #C5A059; }
   .hover\:text-clinic-gold:hover { color: #C5A059; }
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Geller Headline", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  font-weight: 400; /* or desired value */
+}
+
+p, span, a, li, div {
+  font-family: "Geller Headline", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+}
