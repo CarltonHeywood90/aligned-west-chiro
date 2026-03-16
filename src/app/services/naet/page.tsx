@@ -12,7 +12,7 @@ export default function NaetPage() {
         {/* HERO IMAGE */}
         <div className="relative w-full h-[400px]">
           <Image 
-            src="/assets/images/imgServicesNAET.jpg" 
+            src="/assets/images/NAET-vial-kit-1.jpg" 
             fill 
             className="object-cover" 
             alt="NAET Therapy" 

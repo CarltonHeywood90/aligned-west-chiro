@@ -192,7 +192,136 @@ export default function ApprenticeshipPage() {
           </div>
         </section>
 
-        {/* 7. Final CTA Section */}
+        {/* 7. Cost & Responsibilities Section */}
+        <section className="border-t border-slate-200 pt-16 mb-20">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <h2 className="text-3xl md:text-4xl font-serif text-clinic-dark mb-6">
+              Cost & Monthly Overview
+            </h2>
+            <div className="h-1 w-16 bg-clinic-gold mx-auto mb-6"></div>
+            <p className="text-clinic-gray leading-relaxed">
+              Transparent pricing and clear expectations to help you plan your professional journey.
+            </p>
+          </div>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {/* Card 1: Monthly Tuition */}
+            <div className="bg-white p-8 border border-slate-200/60 shadow-sm rounded-sm flex flex-col">
+              <h3 className="text-lg font-serif text-clinic-dark mb-4">Monthly Tuition</h3>
+              <div className="flex-grow">
+                <ul className="text-clinic-gray text-sm space-y-2 mb-6">
+                  <li>• All learning materials</li>
+                  <li>• Oils, creams, and tools</li>
+                  <li>• Equipment included</li>
+                  <li>• No additional fees</li>
+                </ul>
+              </div>
+              <p className="text-2xl font-serif text-clinic-gold mt-auto">$1,500<span className="text-xs uppercase tracking-widest text-clinic-gray ml-1">/mo</span></p>
+            </div>
+
+            {/* Card 2: Student Responsibilities */}
+            <div className="bg-white p-8 border border-slate-200/60 shadow-sm rounded-sm flex flex-col">
+              <h3 className="text-lg font-serif text-clinic-dark mb-4">Student Responsibilities</h3>
+              <ul className="text-clinic-gray text-sm space-y-2">
+                <li>• Provide personal massage sheets</li>
+                <li>• Launder sheets independently</li>
+                <li>• Maintain professionalism</li>
+                <li>• Reliability and punctuality</li>
+              </ul>
+            </div>
+
+            {/* Card 3: Earn While You Learn */}
+            <div className="bg-white p-8 border border-slate-200/60 shadow-sm rounded-sm flex flex-col border-b-clinic-gold/30">
+              <h3 className="text-lg font-serif text-clinic-dark mb-4">Earn While You Learn</h3>
+              <p className="text-clinic-gray text-sm leading-relaxed mb-4">
+                Apprentices earn a portion of every clinical session performed.
+              </p>
+              <p className="text-clinic-gray text-sm italic">
+                Gain experience while supporting monthly tuition.
+              </p>
+            </div>
+
+            {/* Card 4: Sign-On Deposit */}
+            <div className="bg-clinic-navy p-8 border border-clinic-navy shadow-md rounded-sm flex flex-col text-white">
+              <h3 className="text-lg font-serif mb-4">Sign-On Deposit</h3>
+              <p className="text-white/80 text-sm leading-relaxed mb-6">
+                Required to reserve your spot in the upcoming cohort.
+              </p>
+              <div className="mt-auto">
+                <p className="text-2xl font-serif text-clinic-gold">$250</p>
+                <p className="text-[10px] uppercase tracking-tighter opacity-70 mt-1">Due before May 15th, 2026</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* 8. Earning Potential Section */}
+        <section className="border-t border-slate-200 pt-16 mb-20">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <h2 className="text-3xl md:text-4xl font-serif text-clinic-dark mb-6">
+              Earn Money While You Learn
+            </h2>
+            <div className="h-1 w-16 bg-clinic-gold mx-auto mb-6"></div>
+            <p className="text-clinic-gray leading-relaxed">
+              During the apprenticeship, you&apos;ll have the opportunity to earn income through supervised student massage sessions.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            {/* Card 1: Student Massage Sessions */}
+            <div className="bg-white p-8 border border-slate-200/60 shadow-sm rounded-sm flex flex-col">
+              <h3 className="text-xl font-serif text-clinic-dark mb-4">Student Sessions</h3>
+              <div className="space-y-3 flex-grow">
+                <div className="flex justify-between text-sm border-b border-slate-100 pb-2">
+                  <span className="text-clinic-gray">Hours per week</span>
+                  <span className="font-bold text-clinic-dark">20 hrs</span>
+                </div>
+                <div className="flex justify-between text-sm border-b border-slate-100 pb-2">
+                  <span className="text-clinic-gray">Rate</span>
+                  <span className="font-bold text-clinic-dark">$18 / hr</span>
+                </div>
+              </div>
+              <div className="mt-8">
+                <p className="text-2xl font-serif text-clinic-dark">$1,200<span className="text-xs uppercase tracking-widest text-clinic-gray ml-1">/mo</span></p>
+              </div>
+            </div>
+
+            {/* Card 2: Tips (Estimated) */}
+            <div className="bg-white p-8 border border-slate-200/60 shadow-sm rounded-sm flex flex-col">
+              <h3 className="text-xl font-serif text-clinic-dark mb-4">Tips (Estimated)</h3>
+              <div className="space-y-3 flex-grow">
+                <p className="text-sm text-clinic-gray leading-relaxed">
+                  Based on an average of <span className="text-clinic-dark font-semibold">$10–$15</span> per massage in tips from clients.
+                </p>
+              </div>
+              <div className="mt-8">
+                <p className="text-2xl font-serif text-clinic-dark">$800<span className="text-xs uppercase tracking-widest text-clinic-gray ml-1">/mo</span></p>
+              </div>
+            </div>
+
+            {/* Card 3: Total Earning Potential */}
+            <div className="bg-white p-8 border-2 border-clinic-gold shadow-md rounded-sm flex flex-col relative overflow-hidden">
+              {/* Subtle "Total" Tag */}
+              <div className="absolute top-0 right-0 bg-clinic-gold text-white text-[10px] font-bold px-3 py-1 uppercase tracking-widest">
+                Potential
+              </div>
+              
+              <h3 className="text-xl font-serif text-clinic-dark mb-4">Total Earning Potential*</h3>
+              <p className="text-sm text-clinic-gray mb-6">
+                Student sessions + tips
+              </p>
+              
+              <div className="mt-auto">
+                <p className="text-3xl font-serif text-clinic-gold">$2,000<span className="text-xs uppercase tracking-widest text-clinic-gray ml-1">/mo</span></p>
+                <p className="text-[10px] text-clinic-gray leading-tight mt-4 italic">
+                  *Figures are estimates and not a guarantee of income. Actual earnings depend on scheduled hours and client tips.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* 9. Final CTA Section */}
         <section className="border-t border-slate-200 pt-16 text-center">
           <h2 className="text-3xl font-serif text-clinic-dark mb-8">Begin Your Journey</h2>
           <div className="grid md:grid-cols-3 gap-8 mb-12 max-w-4xl mx-auto">

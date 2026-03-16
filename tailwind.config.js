@@ -1,10 +1,21 @@
-module.exports = {
+import typography from '@tailwindcss/typography';
+
+/** @type {import('tailwindcss').Config} */
+const config = {
   content: [
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
     extend: {
+      typography: {
+        DEFAULT: {
+          css: {
+            h1: { fontWeight: '700' },
+            h2: { fontWeight: '700' },
+          },
+        },
+      },
       colors: {
         'clinic-navy': '#1B2B3A',
         'clinic-off-white': '#F4F1EA',
@@ -14,7 +25,6 @@ module.exports = {
         'clinic-beige': '#F9F7F2',
       },
       fontFamily: {
-        // map both utilities to Geller Headline for consistency
         sans: ['"Geller Headline"', 'Inter', 'sans-serif'],
         serif: ['"Geller Headline"', 'Playfair Display', 'serif'],
         display: ['"Geller Headline"', 'Inter', 'sans-serif'],
@@ -24,5 +34,7 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [typography],
 };
+
+export default config;

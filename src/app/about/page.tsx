@@ -64,6 +64,58 @@ export default function AboutPage() {
             </div>
           </div> {/* End Right Column */}
         </div> {/* End Grid */}
+
+        {/* Image import */}
+    <div className="relative w-full h-[400px]">
+      <Image 
+        src="/assets/og-image.png" 
+        fill 
+        className="object-cover" 
+        alt="AlignedWest Chiropractic" 
+        priority
+      />
+    </div>
+
+        {/* Why Choose Section */}
+    <section className="bg-white py-24 px-4">
+      <div className="max-w-4xl mx-auto">
+        
+        {/* Header */}
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-serif text-clinic-dark mb-6">
+            Why Choose AlignedWest Chiropractic
+          </h2>
+          <div className="h-1 w-20 bg-clinic-gold mx-auto"></div>
+        </div>
+
+        {/* Content */}
+        <div className="space-y-8 text-center">
+          <p className="text-lg md:text-xl text-clinic-gray leading-relaxed italic font-serif">
+            AlignedWest Chiropractic offers more than adjustments; it is a space for transformation.
+          </p>
+          
+          <div className="space-y-6 text-clinic-gray leading-relaxed max-w-3xl mx-auto">
+            <p>
+              My holistic approach focuses on removing barriers to your body&apos;s natural ability to heal, 
+              fostering alignment in your body, mind, and spirit. Whether through reiki, acupressure, 
+              reflexology, or chiropractic techniques, I&apos;m here to provide compassionate, expert care 
+              tailored to you.
+            </p>
+            
+            <p className="text-clinic-dark font-medium">
+              Join me at AlignedWest Chiropractic and take that first step towards balance, vitality, 
+              and lasting wellness. Together we&apos;ll align your health with your highest potential.
+            </p>
+          </div>
+
+          {/* Optional Brand Icon/Graphic */}
+          <div className="pt-8 opacity-40">
+            <div className="h-px w-full bg-gradient-to-r from-transparent via-clinic-gold to-transparent"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
       </div> {/* End Max-W Container */}
     </section>
   );

@@ -5,11 +5,15 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("/assets/fonts/geller-headline.woff2") format("woff2");
+  src:
+    local("Geller Headline Light"),
+    local("GellerHeadline-Light"),
+    url("/assets/fonts/geller-headline-light.woff2") format("woff2"),
+    url("/assets/fonts/geller-headline-light.woff") format("woff");
 }
 
 :root {
-  --font-geller-headline: "Geller Headline", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  --font-geller-headline: "Geller Headline", Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
 }
 
 html, body {
@@ -33,11 +37,29 @@ html, body {
   .hover\:text-clinic-gold:hover { color: #C5A059; }
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Geller Headline", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
-  font-weight: 400; /* or desired value */
+h1, h2, h3, h4, h5, h6,
+p, span, a, li, div {
+  font-family: var(--font-geller-headline);
 }
 
-p, span, a, li, div {
-  font-family: "Geller Headline", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+/* Styling for MDX Content */
+.prose h1, .prose h2, .prose h3 {
+  font-weight: 700; /* Bold */
+  color: #1a1a1a; /* Your clinic-dark color */
+  font-family: 'Serif', serif; /* Matching your brand font */
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.prose p,
+.prose ul,
+.prose ol,
+.prose blockquote {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.prose h1 {
+  font-size: 2.25rem;
+  margin-bottom: 1.5rem;
 }
