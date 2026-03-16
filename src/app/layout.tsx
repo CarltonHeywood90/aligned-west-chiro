@@ -20,6 +20,11 @@ const playfair = Playfair_Display({
 export const metadata: Metadata = {
   title: 'AlignedWest Chiropractic | Healing Reimagined',
   description: 'Holistic chiropractic care blending mind, body, and soul in Orem, Utah.',
+  icons: {
+    icon: '/file.svg',
+    shortcut: '/file.svg',
+    apple: '/file.svg',
+  },
 };
 
 export default function RootLayout({

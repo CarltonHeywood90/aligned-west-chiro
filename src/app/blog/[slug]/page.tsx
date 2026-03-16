@@ -3,8 +3,8 @@ import path from 'path';
 import matter from 'gray-matter';
 import Link from 'next/link';
 
-export default async function BlogPost({ params }: { params: { slug: string } }) {
-  const { slug } = params;
+export default async function BlogPost({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
   const filePath = path.join(process.cwd(), 'src/content', `${slug}.mdx`);
   
   if (!fs.existsSync(filePath)) {

@@ -161,7 +161,7 @@ export default function HomePage() {
               <p className="text-clinic-gray text-sm leading-relaxed mb-6">
                 Located in the heart of Orem. View our hours, location, and what to expect.
               </p>
-              <Link href="/clinic-info" className="text-clinic-gold uppercase tracking-widest text-xs font-bold group-hover:underline">
+              <Link href="/clinic" className="text-clinic-gold uppercase tracking-widest text-xs font-bold group-hover:underline">
                 Find Us
               </Link>
             </div>
