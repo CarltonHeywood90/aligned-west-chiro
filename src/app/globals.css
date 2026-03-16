@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Geller Headline";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/fonts/geller-headline.woff2") format("woff2"),
+       url("/assets/fonts/geller-headline.woff") format("woff");
+}
+
+:root {
+  --font-geller-headline: "Geller Headline", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+}
+
+html, body {
+  min-height: 100%;
+  font-family: var(--font-geller-headline);
+}
+
+@layer utilities {
+  .bg-clinic-navy { background-color: #1B2B3A; }
+  .bg-clinic-off-white { background-color: #F4F1EA; }
+  .bg-clinic-dark { background-color: #1A1A1A; }
+  .bg-clinic-beige { background-color: #F9F7F2; }
+
+  .text-clinic-dark { color: #1A1A1A; }
+  .text-clinic-gray { color: #717171; }
+  .text-clinic-gold { color: #C5A059; }
+
+  .hover\:bg-clinic-gold:hover { background-color: #C5A059; }
+  .hover\:text-clinic-gold:hover { color: #C5A059; }
+}
+
