@@ -12,7 +12,7 @@ export default function Footer() {
         <div className="flex flex-col gap-4">
           <h4 className="font-serif text-xl text-clinic-gold">Connect</h4>
           <SocialIcons />
-          <a href="/contact" className="bg-clinic-gold text-white text-center py-3 px-6 hover:bg-opacity-90 transition">
+          <a href="https://portal.turncloud.com/?at=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjM3NDg4IiwibmJmIjoxNzcwMTYyOTMxLCJleHAiOjE3NzAxNjY1MzEsImlhdCI6MTc3MDE2MjkzMX0.3ZcI3tZsdybz50JXl4_agQuW8DchBanHsXTy5pYGXDw" className="bg-clinic-gold text-white text-center py-3 px-6 hover:bg-opacity-90 transition">
             Book Appointment
           </a>
         </div>
