@@ -13,7 +13,7 @@ const LINKS = [
     section: 'Legal',
     items: [
       { name: 'Privacy Policy', href: '/privacy-policy' },
-      { name: 'Accessibility', href: '/accessibility' }, // Added Accessibility link
+      { name: 'Accessibility', href: '/accessibility-statement' }, // Added Accessibility link
       // { name: 'Terms of Service', href: '/terms' } 
     ]
   }

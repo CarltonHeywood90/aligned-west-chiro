@@ -17,8 +17,12 @@ export default function ClinicInfoPage() {
           <div className="bg-white p-8 shadow-sm border border-slate-200/50 flex flex-col items-center text-center">
             <Clock className="text-clinic-gold mb-4" size={32} />
             <h3 className="text-xl font-serif text-clinic-dark mb-4">Hours of Operation</h3>
-            <p className="text-clinic-gray text-sm">Monday – Friday</p>
-            <p className="text-clinic-dark font-medium">9:00 AM – 5:00 PM</p>
+            <p className="text-clinic-dark font-medium">Monday 10:00 AM – 7:00 PM</p>
+            <p className="text-clinic-dark font-medium">Tuesday 10:00 AM – 5:00 PM</p>
+            <p className="text-clinic-dark font-medium">Wednesday 1:00 PM – 7:00 PM</p>
+            <p className="text-clinic-dark font-medium">Thursday 11:00 AM – 6:00 PM</p>
+            <p className="text-clinic-dark font-medium">Friday 8:00 AM – 4:00 PM</p>
+            <p className="text-clinic-gray text-sm mt-2">Closed on weekends</p>
           </div>
 
           {/* Address Card */}
@@ -27,7 +31,7 @@ export default function ClinicInfoPage() {
             <h3 className="text-xl font-serif text-clinic-dark mb-4">Location</h3>
             <p className="text-clinic-gray text-sm">Troon Park Building</p>
             <p className="text-clinic-dark font-medium">574 S State Street, Suite 232</p>
-            <p className="text-clinic-dark font-medium">Orem, UT 84097</p>
+            <p className="text-clinic-dark font-medium">Orem, UT 84058</p>
           </div>
 
           {/* Contact Card */}

@@ -99,7 +99,7 @@ export default function PrivacyPolicy() {
                 <p className="text-sm">If you have any questions about this Privacy Policy, please contact us at:</p>
                 <address className="not-italic text-sm mt-3 space-y-1">
                   <p className="font-bold">AlignedWest Chiropractic</p>
-                  <p>1042 E Bamberger Dr, American Fork, UT 84003</p>
+                  <p>574 S State Street Suite 232, Orem, UT 84058</p>
                   <p>Email: {clinicEmail}</p>
                   <p>Phone: {clinicPhone}</p>
                 </address>
