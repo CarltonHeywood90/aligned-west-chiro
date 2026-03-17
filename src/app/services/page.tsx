@@ -4,21 +4,21 @@ const SERVICES = [
   {
     title: 'Chiropractic Adjustments',
     duration: '15 min session',
-    description: 'Restore alignment and alleviate discomfort with personalized chiropractic adjustments. Using precise techniques, we target misalignments to improve mobility, reduce pain, and support your body&apos;s natural healing processes.',
+    description: "Restore alignment and alleviate discomfort with personalized chiropractic adjustments. Using precise techniques, we target misalignments to improve mobility, reduce pain, and support your body's natural healing processes.",
     href: '/services/chiropractic',
     bookingUrl: "https://portal.turncloud.com/?at=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjM3NDg4IiwibmJmIjoxNzcwMTYyOTMxLCJleHAiOjE3NzAxNjY1MzEsImlhdCI6MTc3MDE2MjkzMX0.3ZcI3tZsdybz50JXl4_agQuW8DchBanHsXTy5pYGXDw"
   },
   {
     title: 'NAET Treatments',
     duration: '30 min session',
-    description: 'Address allergies and sensitivities with Nambudripad&apos;s Allergy Elimination Techniques (NAET). This holistic approach combines chiropractic principles, acupuncture/acupressure, and nutrition to desensitize and balance your body&apos;s reaction to allergens.',
+    description: "Address allergies and sensitivities with Nambudripad's Allergy Elimination Techniques (NAET). This holistic approach combines chiropractic principles, acupuncture/acupressure, and nutrition to desensitize and balance your body's reaction to allergens.",
     href: '/services/naet',
     bookingUrl: "https://portal.turncloud.com/?at=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjM3NDg4IiwibmJmIjoxNzcwMTYyOTMxLCJleHAiOjE3NzAxNjY1MzEsImlhdCI6MTc3MDE2MjkzMX0.3ZcI3tZsdybz50JXl4_agQuW8DchBanHsXTy5pYGXDw"
   },
   {
     title: 'Soul Alignment Session',
     duration: '60 min session',
-    description: 'A transformative session blending intuitive healing, muscle testing, energy clearing, breathwork, and gentle chiropractic alignment. Designed to release stress, rebalance your energy, and reconnect you with your body&apos;s inner wisdom.',
+    description: "A transformative session blending intuitive healing, muscle testing, energy clearing, breathwork, and gentle chiropractic alignment. Designed to release stress, rebalance your energy, and reconnect you with your body's inner wisdom.",
     href: '/services/soul-alignment',
     bookingUrl: "https://portal.turncloud.com/?at=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjM3NDg4IiwibmJmIjoxNzcwMTYyOTMxLCJleHAiOjE3NzAxNjY1MzEsImlhdCI6MTc3MDE2MjkzMX0.3ZcI3tZsdybz50JXl4_agQuW8DchBanHsXTy5pYGXDw"
   },

@@ -32,7 +32,7 @@ export default function ChiropracticPage() {
               At AlignedWest, we view the spine as the central highway of your nervous system. When misalignments (subluxations) occur, they can interrupt the flow of energy and communication between your brain and your body, leading to pain, decreased mobility, and a general sense of fatigue.
             </p>
             <p>
-              Using precise, gentle techniques—including manual adjustments, Activator Methods, and Sacral Occipital Technique (SOT)—we target these misalignments to support your body&apos;s natural healing processes.
+              Using precise, gentle techniques—including manual adjustments, Activator Methods, and Sacral Occipital Technique (SOT)—we target these misalignments to support your body's natural healing processes.
             </p>
             
             <h3 className="text-2xl font-serif text-clinic-dark mt-8">What to Expect</h3>

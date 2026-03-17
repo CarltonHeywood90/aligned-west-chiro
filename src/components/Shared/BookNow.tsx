@@ -6,7 +6,7 @@ export default function BookNow() {
       <Link 
         href="https://portal.turncloud.com/?at=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..." 
         target="_blank"
-        className="bg-clinic-gold text-white px-10 py-4 uppercase tracking-widest text-sm font-bold hover:bg-clinic-navy transition-all duration-300"
+        className="bg-clinic-navy text-white px-10 py-4 uppercase tracking-widest text-sm font-bold hover:bg-clinic-gold transition-all duration-300"
       >
         Book Now
       </Link>

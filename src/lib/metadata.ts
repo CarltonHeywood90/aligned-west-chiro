@@ -6,7 +6,7 @@ export const siteConfig = {
   url: 'https://www.alignedwestchiropractic.com',
   ogImage: 'https://www.alignedwestchiropractic.com/og-image.jpg', // Make sure to host a branded image here
   address: '574 S State St, Suite #232, Orem UT, 84058',
-  phone: '801-623-0912',
+  phone: '801-658-9185',
 };
 
 export const defaultMetadata: Metadata = {

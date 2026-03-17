@@ -74,7 +74,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
           <Link 
             href="https://portal.turncloud.com/?at=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjM3NDg4IiwibmJmIjoxNzcwMTYyOTMxLCJleHAiOjE3NzAxNjY1MzEsImlhdCI6MTc3MDE2MjkzMX0.3ZcI3tZsdybz50JXl4_agQuW8DchBanHsXTy5pYGXDw"
             target="_blank"
-            className="inline-block bg-clinic-gold text-white px-10 py-4 uppercase tracking-widest text-sm font-bold hover:bg-clinic-navy transition-all"
+            className="inline-block bg-clinic-navy text-white px-10 py-4 uppercase tracking-widest text-sm font-bold hover:bg-clinic-navy transition-all"
           >
             Book Your Session
           </Link>
