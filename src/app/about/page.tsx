@@ -65,17 +65,6 @@ export default function AboutPage() {
           </div> {/* End Right Column */}
         </div> {/* End Grid */}
 
-        {/* Image import */}
-    <div className="relative w-full h-[400px]">
-      <Image 
-        src="/assets/og-image.png" 
-        fill 
-        className="object-cover" 
-        alt="AlignedWest Chiropractic" 
-        priority
-      />
-    </div>
-
         {/* Why Choose Section */}
     <section className="bg-white py-24 px-4">
       <div className="max-w-4xl mx-auto">

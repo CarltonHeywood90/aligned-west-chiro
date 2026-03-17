@@ -9,16 +9,6 @@ export default function ApprenticeshipPage() {
   return (
     <main className="bg-clinic-off-white min-h-screen">
       {/* 1. Hero Banner Section */}
-      <div className="relative w-full h-[40vh] md:h-[50vh] overflow-hidden">
-        <Image
-          src="/assets/images/Wade Prone.png"
-          alt="Apprenticeship Program Banner"
-          fill
-          className="object-cover"
-          priority
-        />
-        <div className="absolute inset-0 bg-clinic-navy/10"></div>
-      </div>
 
       {/* 2. Page Header & Intro */}
       <div className="max-w-5xl mx-auto px-6 py-16">
@@ -35,6 +25,16 @@ export default function ApprenticeshipPage() {
             <p className="text-2xl font-serif text-clinic-dark">
               {applicationDeadline}
             </p>
+          </div>
+
+          <div className="relative w-5/8 h-[60vh] md:h-[60vh] align-middle mx-auto mb-12 rounded-sm overflow-hidden">
+            <Image
+              src="/assets/images/pexels-aleksandra-pekala-736444-16246682.jpg"
+              alt="Apprenticeship Program Banner"
+              fill
+              className="object-cover object-position-bottom"
+              priority
+            />
           </div>
 
           <div className="max-w-2xl mx-auto mb-10">

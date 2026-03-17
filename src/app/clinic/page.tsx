@@ -1,4 +1,5 @@
 import { Clock, MapPin, Phone, Info, Car } from 'lucide-react'; // Using lucide-react for subtle icons
+import Image from 'next/image';
 
 export default function ClinicInfoPage() {
   return (
@@ -10,6 +11,17 @@ export default function ClinicInfoPage() {
           <h1 className="text-4xl md:text-5xl font-serif text-clinic-dark mb-4">Clinic Information</h1>
           <div className="h-1 w-20 bg-clinic-gold mx-auto mb-6"></div>
           <p className="text-clinic-gray">Everything you need to know for your visit to AlignedWest.</p>
+        </div>
+
+        {/* Image */}
+        <div className="relative w-1/2 h-1/2 md:h-[300px] mb-16 align-middle mx-auto">
+          <Image 
+            src="/assets/images/Troon_Park.jpg" 
+            alt="AlignedWest Chiropractic Clinic Front" 
+            fill 
+            className="object-cover object-center rounded-sm shadow-sm border border-slate-200/50"
+            priority
+          />
         </div>
 
         <div className="grid md:grid-cols-3 gap-8 mb-12">

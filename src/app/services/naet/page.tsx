@@ -45,7 +45,7 @@ export default function NaetPage() {
               <Link 
                 href={bookingUrl}
                 target="_blank"
-                className="inline-block bg-clinic-yellow text-clinic-dark px-12 py-4 text-sm uppercase tracking-widest font-bold hover:bg-clinic-navy transition-all duration-300 shadow-md"
+                className="inline-block bg-clinic-navy text-white px-12 py-4 text-sm uppercase tracking-widest font-bold hover:bg-clinic-navy transition-all duration-300 shadow-md"
               >
                 Book NAET Treatment
               </Link>

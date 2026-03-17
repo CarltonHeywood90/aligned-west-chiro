@@ -5,16 +5,13 @@ import SocialIcons from './SocialIcons';
 export default function Footer() {
   return (
     <footer className="bg-clinic-dark text-white py-16 border-t border-white/10">
-      <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-12">
+      <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-5 gap-12">
         <ContactInfo />
         <FooterLinks />
 
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4 md:col-span-3">
           <h4 className="font-serif text-xl text-clinic-gold">Connect</h4>
           <SocialIcons />
-          <a href="https://portal.turncloud.com/?at=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjM3NDg4IiwibmJmIjoxNzcwMTYyOTMxLCJleHAiOjE3NzAxNjY1MzEsImlhdCI6MTc3MDE2MjkzMX0.3ZcI3tZsdybz50JXl4_agQuW8DchBanHsXTy5pYGXDw" className="bg-clinic-gold text-white text-center py-3 px-6 hover:bg-opacity-90 transition">
-            Book Appointment
-          </a>
         </div>
       </div>
       <div className="text-center mt-12 pt-8 border-t border-white/10 text-sm text-gray-400">
