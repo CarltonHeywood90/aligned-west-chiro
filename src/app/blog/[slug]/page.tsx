@@ -72,7 +72,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
         {/* Simple manual injection of the Book Now link if you haven't set up the MDX component yet */}
         <div className="mt-16 pt-12 border-t border-slate-200 text-center">
           <Link 
-            href="https://portal.turncloud.com/?at=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjM3NDg4IiwibmJmIjoxNzcwMTYyOTMxLCJleHAiOjE3NzAxNjY1MzEsImlhdCI6MTc3MDE2MjkzMX0.3ZcI3tZsdybz50JXl4_agQuW8DchBanHsXTy5pYGXDw"
+            href={process.env.NEXT_PUBLIC_BOOK_NOW_LINK || '#'}
             target="_blank"
             className="inline-block bg-clinic-navy text-white px-10 py-4 uppercase tracking-widest text-sm font-bold hover:bg-clinic-navy transition-all"
           >

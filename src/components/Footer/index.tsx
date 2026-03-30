@@ -17,6 +17,7 @@ export default function Footer() {
           <div className="flex flex-col items-center md:items-start">
             <h4 className="font-serif text-lg text-clinic-gold mb-4 uppercase tracking-wider">Services</h4>
             <ul className="space-y-3 text-sm text-gray-300">
+              <li><Link href="/services/apprentice-massage" className="hover:text-white">Apprentice Massage</Link></li>
               <li><Link href="/services/chiropractic" className="hover:text-white">Chiropractic</Link></li>
               <li><Link href="/services/naet" className="hover:text-white">NAET</Link></li>
               <li><Link href="/services/soul-alignment" className="hover:text-white">Soul Alignment</Link></li>

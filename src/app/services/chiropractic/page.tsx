@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export default function ChiropracticPage() {
   // Turncloud URL
-  const bookingUrl = "https://portal.turncloud.com/?at=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjM3NDg4IiwibmJmIjoxNzcwMTYyOTMxLCJleHAiOjE3NzAxNjY1MzEsImlhdCI6MTc3MDE2MjkzMX0.3ZcI3tZsdybz50JXl4_agQuW8DchBanHsXTy5pYGXDw";
+  const bookingUrl = { href: process.env.NEXT_PUBLIC_BOOK_NOW_LINK || '#' };
 
   return (
     <article className="bg-clinic-off-white min-h-screen py-20 px-4">
@@ -12,7 +12,7 @@ export default function ChiropracticPage() {
         {/* HERO IMAGE */}
         <div className="relative w-full h-[400px]">
           <Image 
-            src="/assets/images/Mom_Side_Posture.png" 
+            src="/assets/images/Gloria-adjust.jpeg" 
             fill 
             className="object-cover object-bottom" 
             alt="Chiropractic Care at AlignedWest" 
@@ -63,7 +63,7 @@ export default function ChiropracticPage() {
                   <span className="text-clinic-gold font-bold">/</span>
                   <div>
                     <strong className="text-clinic-dark block">Enhanced Energy</strong>
-                    Removing "stuck" energy and physical blockages allows your body to function with less effort.
+                    Removing stuck energy and physical blockages allows your body to function with less effort.
                   </div>
                 </li>
               </ul>
@@ -88,7 +88,7 @@ export default function ChiropracticPage() {
 
             <div className="text-center pt-10 border-t border-slate-100">
               <Link 
-                href={bookingUrl}
+                href={process.env.NEXT_PUBLIC_BOOK_NOW_LINK || '#'}
                 target="_blank"
                 className="inline-block bg-clinic-navy text-white px-12 py-4 text-sm uppercase tracking-widest font-bold hover:bg-clinic-navy transition-all duration-300 shadow-md"
               >

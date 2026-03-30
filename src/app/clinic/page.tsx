@@ -16,7 +16,7 @@ export default function ClinicInfoPage() {
         {/* Image */}
         <div className="relative w-1/2 h-1/2 md:h-[300px] mb-16 align-middle mx-auto">
           <Image 
-            src="/assets/images/Troon_Park.jpg" 
+            src="/assets/images/Troon-Park.jpeg" 
             alt="AlignedWest Chiropractic Clinic Front" 
             fill 
             className="object-cover object-center rounded-sm shadow-sm border border-slate-200/50"

@@ -4,6 +4,7 @@ const LINKS = [
   { 
     section: 'Services', 
     items: [
+      { name: 'Apprentice Massage', href: '/services/apprentice-massage' },
       { name: 'Chiropractic', href: '/services/chiropractic' },
       { name: 'NAET', href: '/services/naet' },
       { name: 'Soul Alignment', href: '/services/soul-alignment' }
