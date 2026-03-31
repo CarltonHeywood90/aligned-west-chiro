@@ -24,7 +24,7 @@ const SERVICES = [
   },
   {
     title: 'Apprentice Massage Sessions',
-    duration: '60 or 90 min sessions',
+    duration: '50 min sessions',
     description: "Experience therapeutic massage at a reduced rate while supporting the next generation of skilled bodywork practitioners. Sessions focus on tension relief, relaxation, and foundational therapeutic techniques, all performed in a professional, supervised clinical environment.",
     href: '/services/apprentice-massage',
     bookingUrl: process.env.NEXT_PUBLIC_BOOK_NOW_LINK
