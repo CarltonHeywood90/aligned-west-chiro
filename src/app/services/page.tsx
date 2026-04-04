@@ -6,21 +6,28 @@ const SERVICES = [
     duration: '15 min session',
     description: "Restore alignment and alleviate discomfort with personalized chiropractic adjustments. Using precise techniques, we target misalignments to improve mobility, reduce pain, and support your body's natural healing processes.",
     href: '/services/chiropractic',
-    bookingUrl: "https://portal.turncloud.com/?at=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjM3NDg4IiwibmJmIjoxNzcwMTYyOTMxLCJleHAiOjE3NzAxNjY1MzEsImlhdCI6MTc3MDE2MjkzMX0.3ZcI3tZsdybz50JXl4_agQuW8DchBanHsXTy5pYGXDw"
+    bookingUrl: process.env.NEXT_PUBLIC_BOOK_NOW_LINK
   },
   {
     title: 'NAET Treatments',
     duration: '30 min session',
     description: "Address allergies and sensitivities with Nambudripad's Allergy Elimination Techniques (NAET). This holistic approach combines chiropractic principles, acupuncture/acupressure, and nutrition to desensitize and balance your body's reaction to allergens.",
     href: '/services/naet',
-    bookingUrl: "https://portal.turncloud.com/?at=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjM3NDg4IiwibmJmIjoxNzcwMTYyOTMxLCJleHAiOjE3NzAxNjY1MzEsImlhdCI6MTc3MDE2MjkzMX0.3ZcI3tZsdybz50JXl4_agQuW8DchBanHsXTy5pYGXDw"
+    bookingUrl: process.env.NEXT_PUBLIC_BOOK_NOW_LINK
   },
   {
     title: 'Soul Alignment Session',
     duration: '60 min session',
     description: "A transformative session blending intuitive healing, muscle testing, energy clearing, breathwork, and gentle chiropractic alignment. Designed to release stress, rebalance your energy, and reconnect you with your body's inner wisdom.",
     href: '/services/soul-alignment',
-    bookingUrl: "https://portal.turncloud.com/?at=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjM3NDg4IiwibmJmIjoxNzcwMTYyOTMxLCJleHAiOjE3NzAxNjY1MzEsImlhdCI6MTc3MDE2MjkzMX0.3ZcI3tZsdybz50JXl4_agQuW8DchBanHsXTy5pYGXDw"
+    bookingUrl: process.env.NEXT_PUBLIC_BOOK_NOW_LINK
+  },
+  {
+    title: 'Apprentice Massage Sessions',
+    duration: '50 min sessions',
+    description: "Experience therapeutic massage at a reduced rate while supporting the next generation of skilled bodywork practitioners. Sessions focus on tension relief, relaxation, and foundational therapeutic techniques, all performed in a professional, supervised clinical environment.",
+    href: '/services/apprentice-massage',
+    bookingUrl: process.env.NEXT_PUBLIC_BOOK_NOW_LINK
   },
 ];
 
@@ -39,28 +46,28 @@ export default function ServicesPage() {
         </div>
 
         {/* Services Grid */}
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {SERVICES.map((service) => (
-            <div key={service.title} className="bg-white border border-slate-200 flex flex-col h-full">
+            <div key={service.title} className="bg-white border border-slate-200 flex flex-col h-full shadow-sm hover:shadow-md transition-shadow">
               {/* Top Content Area */}
               <div className="p-8 flex-grow">
-                <h3 className="text-xl font-serif text-clinic-dark mb-2">{service.title}</h3>
+                <h3 className="text-xl font-serif text-clinic-dark mb-2 leading-tight">{service.title}</h3>
                 <p className="text-clinic-gold text-sm font-bold uppercase tracking-wider mb-4">{service.duration}</p>
-                <p className="text-clinic-gray leading-relaxed">{service.description}</p>
+                <p className="text-clinic-gray leading-relaxed text-sm">{service.description}</p>
               </div>
               
               {/* Bottom Action Area */}
               <div className="px-8 pb-8 space-y-3">
                 <Link 
-                  href={service.bookingUrl}
+                  href={process.env.NEXT_PUBLIC_BOOK_NOW_LINK || '#'}
                   target="_blank"
-                  className="block text-center bg-clinic-yellow text-clinic-dark py-3 text-xs uppercase tracking-widest font-bold hover:bg-clinic-navy transition-colors shadow-sm"
+                  className="block text-center bg-clinic-yellow text-clinic-dark py-3 text-xs uppercase tracking-widest font-bold hover:bg-clinic-gold transition-colors shadow-sm"
                 >
                   Book Now
                 </Link>
                 <Link 
                   href={service.href} 
-                  className="block text-center bg-clinic-navy text-white py-3 text-xs uppercase tracking-widest font-bold hover:bg-clinic-navy hover:text-white transition-colors"
+                  className="block text-center bg-clinic-navy text-white py-3 text-xs uppercase tracking-widest font-bold hover:opacity-90 transition-opacity"
                 >
                   Learn More
                 </Link>

@@ -4,7 +4,7 @@ export default function BookNow() {
   return (
     <div className="flex justify-center my-12">
       <Link 
-        href="https://portal.turncloud.com/?at=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..." 
+        href={process.env.NEXT_PUBLIC_BOOK_NOW_LINK || '#'}
         target="_blank"
         className="bg-clinic-navy text-white px-10 py-4 uppercase tracking-widest text-sm font-bold hover:bg-clinic-gold transition-all duration-300"
       >
