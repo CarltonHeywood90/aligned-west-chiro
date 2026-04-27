@@ -59,7 +59,7 @@ export default function HomePage() {
               alt="Dr. Sorensen headshot"
               width={500}
               height={500}
-              className="w-full h-auto object-cover rounded-sm shadow-sm border border-slate-200/50"
+              className="w-full h-171.5 object-cover rounded-sm shadow-sm border border-slate-200/50"
               priority
             />
           </div>
